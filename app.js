@@ -44,7 +44,7 @@ function showWeather(data) {
   //resetVisibility();
   // document.querySelector('.weather').innerHTML = "";
   if (data.main.feels_like < 60 && data.main.feels_like > 33) {
-      element1.style.visibility = 'visible';
+      // element1.style.visibility = 'visible';
       document.querySelector('.weather').style.visibility = 'visible';
       document.querySelector('#close').style.visibility = 'hidden';
       document.querySelector('#close').style.fontSize = '0%';
@@ -64,7 +64,7 @@ function showWeather(data) {
   `;
   } else if (data.main.feels_like < 33 && data.main.feels_like > 25) {
       
-      element2.style.visibility = 'visible';
+      // element2.style.visibility = 'visible';
       document.querySelector('.weather').style.visibility = 'visible';
       document.querySelector('#close').style.visibility = 'hidden';
       document.querySelector('#close').style.fontSize = '0%';
@@ -83,7 +83,7 @@ function showWeather(data) {
            <p> Cloud : ${data.clouds.all} %</p>`;
   } else {
    
-      element3.style.visibility = 'visible';
+      // element3.style.visibility = 'visible';
       document.querySelector('.weather').style.visibility = 'visible';
       document.querySelector('#close').style.visibility = 'hidden';
       document.querySelector('#close').style.fontSize = '0%';
@@ -103,16 +103,16 @@ function showWeather(data) {
   }
 
  
-  if(element1 === 'visible'){
-    element2 === 'hidden';
-    element3 === 'hidden';
-  }else if(element2 ==='visible'){
-    element1 === 'hidden';
-    element3 === 'hidden';
-  }else{
-    element2 === 'hidden';
-    element1 === 'hidden';
-  }
+  // if(element1 === 'visible'){
+  //   element2 === 'hidden';
+  //   element3 === 'hidden';
+  // }else if(element2 ==='visible'){
+  //   element1 === 'hidden';
+  //   element3 === 'hidden';
+  // }else{
+  //   element2 === 'hidden';
+  //   element1 === 'hidden';
+  // }
 }
 
 // function resetVisibility() {
