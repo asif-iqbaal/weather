@@ -75,12 +75,12 @@ function showWeather(data) {
               <h2>${data.main.feels_like} °C </h2>
               <h2 id="time">  ${dat} ${month}   ${hour}:${min} </h2>
           </div>
-          // <p>Temperature : ${data.main.temp} °C</p>
-          // <p>Wind Speed : ${data.wind.speed} m/s</p>
-          // <p> Humidity : ${data.main.humidity}%</p>
-          // <p>Pressure : ${data.main.pressure} hpa</p>
-          // <p> Max Temp : ${data.main.temp_max} °C </p>
-          // <p> Cloud : ${data.clouds.all} %</p>`;
+           <p>Temperature : ${data.main.temp} °C</p>
+            <p>Wind Speed : ${data.wind.speed} m/s</p>
+           <p> Humidity : ${data.main.humidity}%</p>
+           <p>Pressure : ${data.main.pressure} hpa</p>
+         <p> Max Temp : ${data.main.temp_max} °C </p>
+           <p> Cloud : ${data.clouds.all} %</p>`;
   } else {
    
       element3.style.visibility = 'visible';
