@@ -1,4 +1,5 @@
-document.querySelector('#weather-btn').addEventListener('click',function(){
+document.querySelector('#cityInput').addEventListener('keydown',function(event){
+  if(event.key === 'Enter'){
   let city = document.querySelector('#cityInput').value;
   const apikey = "9b1ce2ad7327df86a6b1dce6441e87fa";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
@@ -13,6 +14,7 @@ document.querySelector('#weather-btn').addEventListener('click',function(){
     }
   })
   .catch(error => console.error('error',error));
+  }   
 });
 
 function showWeather(data){
