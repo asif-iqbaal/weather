@@ -85,12 +85,12 @@
     padding-left: 1%;
     font-size: 175%;
 }
-.weather p{
-   color: black;
+.weather p {
+    color: black;
     width: 50%;
-    font-size: 150%;
-   margin-top: 2%;
-   text-decoration: underline;
+    font-size: 130%;
+    margin-top: 2%;
+    text-decoration: underline;
 }
 
 #close{
@@ -126,12 +126,13 @@
 .new_div {
     width: 100%;
     height: 20%;
+    border-bottom: 1px solid gre
 }
-#time{
+#time {
     height: auto;
     margin-top: 2%;
     margin-left: 45%;
-    font-size: x-large;
+    font-size: large;
 }
 @media (min-width:300px) and (max-width: 750px){
 
@@ -194,13 +195,13 @@
         height: 80%;
         width: 15%;
     }
-    .weather {
+        .weather {
         visibility: hidden;
         background-color: #dad7cd;
-        width: 80%;
+        width: 100%;
         font-size: small;
         font-family: Arial, Helvetica, sans-serif;
-        border-radius: 8px;
+        border-radius: 0;
         border-color: rgb(26, 167, 227);
         background-color: #ffffff;
         text-align: center;
